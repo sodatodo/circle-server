@@ -10,7 +10,8 @@ app.use(async ctx => {
     const payload = ctx.request.body.payload;
 
     console.log('header: ', header)
-    console.log('payload: ', Object.keys(payload))
+    console.log('payload:', payload)
+    console.log('keys: ', Object.keys(payload))
     // console.log(`ctx.header`, ctx.header);
     // console.log('ctx.body', ctx.request.body);
     // ctx.body = 'Hello Koa';
