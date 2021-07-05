@@ -11,7 +11,7 @@ app.use(async ctx => {
 
     console.log('header: ', header)
     console.log('payload:', payload)
-    console.log('keys: ', Object.keys(payload))
+    console.log('keys: ', typeof payload)
     // console.log(`ctx.header`, ctx.header);
     // console.log('ctx.body', ctx.request.body);
     // ctx.body = 'Hello Koa';
