@@ -6,6 +6,7 @@ app.use(bodyParser());
 
 app.use(async ctx => {
     console.log(`ctx.header`, ctx.header);
+    console.log('ctx.body', ctx.request.body)
     ctx.body = 'Hello Koa';
 });
 
