@@ -7,6 +7,10 @@ app.use(bodyParser());
 app.use(async ctx => {
     const { header } = ctx;
     const eventType = header['x-github-event'];
+
+    if (eventType === 'push') {
+        // 执行bash
+    }
     const payload = ctx.request.body.payload;
 
     console.log('header: ', header)
